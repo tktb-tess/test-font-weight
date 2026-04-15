@@ -15,41 +15,14 @@
       rel="stylesheet"
     />
     -->
-    <style>
-      @font-face {
-        font-family: 'inter-variable';
-        font-display: swap;
-        src: local('Inter');
-      }
-
-      @font-face {
-        font-family: 'noto-sans-jp-variable';
-        font-display: swap;
-        src: local('Noto Sans JP');
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font: unset;
-      }
-
-      :root {
-        font-family: 'inter-variable', 'noto-sans-jp-variable';
-        font-feature-settings: 'calt', 'cv01', 'cv05', 'cv07', 'cv08', 'cv10', 'ss03', 'tnum';
-        font-optical-sizing: auto;
-      }
-
-      p {
-        font: unset;
-        font-size: 5rem;
-      }
-    </style>
+    <link rel="stylesheet" href="/assets/app.css" />
     <title>test-font-weight</title>
   </head>
   <body>
-    <p id="sample">300: ABC Lorem ipsum</p>
-    <script type="module"></script>
+    <div class="slidebar-wrapper">
+      <input type="range" min="100" max="900" value="400" id="slidebar">
+    </div>
+    <p id="sample"></p>
+    <script type="module" src="/assets/app.js"></script>
   </body>
 </html>

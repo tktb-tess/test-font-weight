@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'inter-variable';
+  font-display: swap;
+  src: local('Inter');
+}
+
+@font-face {
+  font-family: 'noto-sans-jp-variable';
+  font-display: swap;
+  src: local('Noto Sans JP');
+}
+
+*,
+::before,
+::after,
+::backdrop {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: unset;
+}
+
+:root {
+  font-family: 'inter-variable', 'noto-sans-jp-variable';
+  font-feature-settings:
+    'calt', 'cv01', 'cv05', 'cv07', 'cv08', 'cv10', 'ss03', 'tnum';
+  font-optical-sizing: auto;
+}
+
+#sample {
+  font: unset;
+  font-size: 3rem;
+}
+
+.slidebar-wrapper {
+  display: grid;
+  padding-inline: 1rem;
+  margin-block: 2rem;
+}
